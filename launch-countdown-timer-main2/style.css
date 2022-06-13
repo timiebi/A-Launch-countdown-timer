@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Text', sans-serif;
+}
+
+body{
+    background-color: hsl(234, 17%, 12%);
+}
+
+.center{width: 100%;
+    max-width: 1440px;
+   
+}
+
+.container{
+    margin-top: 5.5em;
+    width: 100%;
+    
+}
+
+h4{
+    text-align: center;
+    margin-bottom: 4.5em;
+    color: hsl(0, 0%, 100%);
+}
+
+.flip_card{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+    margin: auto;
+    /* border: 2px solid red; */
+}
+
+.days, .hours, .minute, .second{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    position: absolute;
+    bottom: 0;
+    max-width: 100%;
+    width: 100%;
+    height: 20vh;
+}
+
+.days_number, .hour_number, .minute_number, .second_number{
+    /* border: 2px solid red; */
+    background: linear-gradient(hsl(236, 21%, 26%), hsl(235, 16%, 14%));
+    padding: 2.5em;
+    width: 90%;
+    /* padding-right: 5em; */
+    
+}
+
+p{
+    padding: 1em;
+    color: hsl(237, 18%, 59%);
+    font-size: .75rem;
+}
+
+span{
+    position: relative;
+    color: hsl(345, 95%, 68%, 0.8);
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+/* icons */
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin: 10em;
+    width: 70%;
+    z-index: 9;
+    margin-top: 18em;
+    /* border: 2px solid red; */
+}
+.fa-facebook, .fa-pinterest, .fa-instagram{
+    color: hsl(237, 18%, 59%);
+    padding: .5em;
+    margin: .4em;
+    transition: 0.3s;
+
+}
+.icons >i:hover{
+    cursor: pointer;
+    background-color: hsl(345, 95%, 68%);
+    border-radius: 50%;
+    transition: 0.5s;
+    color: black;
+}
+
+/* media queries */
+@media (max-width: 375px){
+    .container{
+        margin-top: 5.5em;
+        width: 100%;
+        
+    }
+    .days_number, .hour_number, .minute_number, .second_number{
+        /* border: 2px solid red; */
+        background: linear-gradient(hsl(236, 21%, 26%), hsl(235, 16%, 14%));
+        padding: 2em;
+        margin-top: 2.5em;
+        width: 60%;
+        padding-right: 2.3em;   
+    }
+    span{
+        position: relative;
+        color: hsl(345, 95%, 68%, 0.8);
+        font-size: 1.2rem;
+    }
+    img{
+        position: absolute;
+        top: 80%;
+        max-width: 100%;
+        width: 100%;
+        height: 30%;
+    }
+    .icons{
+        width: 50%;
+        margin-right: 1em;
+        right: 22%;
+        margin-top: 24em;
+        z-index: 9;
+    }
+    .icons >i:hover{
+        transition: 0.5s;
+        background-color: hsl(345, 95%, 68%);
+    }
+
+}
+
